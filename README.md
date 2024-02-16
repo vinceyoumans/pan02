@@ -47,9 +47,15 @@ make panmon
 
 From root
 ```
-panmon02
+make panmon02
 ```
 then start to add and update files.
+
+
+The executable is ./bin/panmon
+which is a CLI.
+
+I also have spare command that you can ignore
 
 
 
@@ -60,12 +66,12 @@ I believe everything requested is delivered except...
   - I know how to fix this, but ran out of time.
   
 
-From the ./tmp file you can ...
-create file
-edit file
-delete file
+From the ./tmp file you can...
+- create file
+- edit file
+- delete file
 
-You can also rename a file, but the original file name will remain in the JSON file.
+- You can also rename a file, but the original file name will remain in the JSON file.
 I can fix this but ran out of time.
 
 

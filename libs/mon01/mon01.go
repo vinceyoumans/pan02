@@ -83,11 +83,11 @@ func Mon01(mm structs.Mon) string {
 				if event.Has(fsnotify.Chmod) {
 					log.Println("05 ----Chmod")
 					log.Println("05 file Name:", event.Name)
-					fileSize = getEventDetails(event.Name)
-					log.Println("05 =====  size ", fileSize)
 
-					log.Println("========    section 2")
-					m[event.Name] = fileSize
+					//  FIX this...
+					//ename := strings.Replace(event.Name, "~", "", 1)
+					//delete(m, ename)
+					//log.Println(m)
 
 					log.Println("xxxxxx===================")
 					log.Println(m)
