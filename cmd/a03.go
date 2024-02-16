@@ -5,7 +5,7 @@ package cmd
 
 import (
 	"fmt"
-	"github.com/vinceyoumans/cobraTest/libs/a03"
+	"github.com/vinceyoumans/pan02/libs/a03"
 
 	"github.com/spf13/cobra"
 )

@@ -6,8 +6,10 @@ package cmd
 import (
 	"fmt"
 	"github.com/spf13/cobra"
-	"github.com/vinceyoumans/cobraTest/libs/a01"
+	"github.com/vinceyoumans/pan02/libs/a01"
 )
+
+//github.com/vinceyoumans/pan02/libs/a01
 
 // a01Cmd represents the a01 command
 var a01Cmd = &cobra.Command{

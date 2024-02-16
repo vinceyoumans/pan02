@@ -21,7 +21,7 @@ modification of files. Implement the following functionalities:
 
 4. Concurrency Management: Process files concurrently. The degree of concurrency (i.e., the
    number of files processed in parallel) must be configurable.
-
+VY:   I did not understand Q4.  I added a parameter for concurrency Management, but is not implemented.
 
 
 5. Configuration Flexibility: Allow configuration settings (such as the target directory path, storage
@@ -33,4 +33,39 @@ modification of files. Implement the following functionalities:
     Adhere to Go coding best practices, including but not limited to project structure, naming
    conventions, error handling, and the effective use of interfaces.
     Ensure the code is well-structured, readable, and maintainable.
+
+
+
+#  DELIVERABLE
+
+From root,
+
+```
+make panmon
+```
+
+
+From root
+```
+panmon02
+```
+then start to add and update files.
+
+
+
+## NOTES
+I believe everything requested is delivered except... 
+- Item 4.  I am not sure how to resolve.
+- If an file is renamed, the original name is not removed from the JSON file.
+  - I know how to fix this, but ran out of time.
+  
+
+From the ./tmp file you can ...
+create file
+edit file
+delete file
+
+You can also rename a file, but the original file name will remain in the JSON file.
+I can fix this but ran out of time.
+
 

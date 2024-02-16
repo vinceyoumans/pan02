@@ -1,31 +1,23 @@
 
 build:
-	go build -o bin/fi  main.go
+	go build -o bin/panmon  main.go
 
 run:
 	go run main.go
 
 
-rfi:
-	@./bin/fi
-
-# modify separate arguments here.
-rfi01:
-	@./bin/fi f01
+panmon:
+	@./bin/panmon
 
 
-
-# modify separate arguments here.
-rt01:
-	go build -o bin/ti  main.go
-	@./bin/ti t01
-
-rt01-test:
-	go test
+panmon02:
+	@./bin/panmon mon01 --dirToMonitor="./tmp" --dirTorecordJSON="./json" --concMan=4
 
 
+
+
+# Testing of all libraries
 test:
-
 	@echo "================= testing a01"
 	cd "./libs/a01" && go test -v
 
@@ -35,17 +27,8 @@ test:
 	@echo "================= test A03"
 	cd "./libs/a03" && go test -v
 
-	@echo "================= testing T01"
-	cd "./libs/t01" && go test -v
-
-	@echo "================= test T02"
-	cd "./libs/t02" && go test -v
-
-	@echo "================= test F01"
-	cd "./libs/f01" && go test -v
-
-	@echo "================= test P01"
-	cd "./libs/p01" && go test -v
+	@echo "================= testing Mon01"
+	cd "./libs/mon01" && go test -v
 
 
 
